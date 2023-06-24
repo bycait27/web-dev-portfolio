@@ -40,6 +40,10 @@ li {
     padding-bottom: 5px;
 }
 
+.nav li:hover {
+    background-color: var(--header-2-color);
+}
+
 main {
     background-color: var(--main-bg-color);
     color: var(--text-color);
