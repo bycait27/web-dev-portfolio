@@ -10,10 +10,34 @@
 .header {
     background-color: var(--header-footer-color);
     color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header hi, li {
+h1 {
+    margin-left: 20px;
+    color: var(--main-bg-color);
+}
+
+.header li {
     background-color: var(--main-bg-color);
+}
+
+li {
+    display: flex;
+}
+
+.page-links li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 main {
