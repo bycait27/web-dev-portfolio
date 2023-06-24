@@ -1,0 +1,30 @@
+:root {
+    --main-bg-color: #fff6eb;
+    --header-footer-color: #f7d48b;
+    --button-color-1: #fff6eb;
+    --button-color-2: #8ea2e7;
+    --header-2-color: #cbc799;
+    --text-color: #1d1f21;
+}
+
+.header {
+    background-color: var(--header-footer-color);
+    color: var(--text-color);
+}
+
+.header hi, li {
+    background-color: var(--main-bg-color);
+}
+
+main {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+h2 {
+    background-color: var(--header-2-color);
+}
+
+.footer {
+    background-color: var(--header-footer-color);
+}
