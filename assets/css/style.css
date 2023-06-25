@@ -7,6 +7,10 @@
     --text-color: #1d1f21;
 }
 
+* {
+    background-color: var(--main-bg-color);
+}
+
 .header {
     background-color: var(--header-footer-color);
     color: var(--text-color);
@@ -18,15 +22,11 @@
 
 h1 {
     margin-left: 20px;
-    color: var(--main-bg-color);
+    color: var(--text-color);
 }
 
 .header li {
     background-color: var(--main-bg-color);
-}
-
-li {
-    display: flex;
 }
 
 .page-links li {
@@ -53,8 +53,38 @@ main {
     color: var(--text-color);
 }
 
+.about-me p {
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 25px;
+    padding-right: 150px;
+    line-height: 23px;
+}
+
+.projects {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#first-app {
+    display: flex;
+    justify-self: center;
+}
+
+.contacts {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 h2 {
     background-color: var(--header-2-color);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
 }
 
 .footer {
