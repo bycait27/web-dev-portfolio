@@ -1,3 +1,5 @@
+/* the following code designates custom variables for various colors featured on 
+the website. these are the colors i will be using the most when styling with css */
 :root {
     --main-bg-color: #fff6eb;
     --header-footer-color: #f7d48b;
@@ -6,11 +8,17 @@
     --header-2-color: #cbc799;
     --text-color: #1d1f21;
 }
-
+/* the following code sets the entire background color of the code included between the html 
+tags to the designated variable */
 html {
     background-color: var(--main-bg-color);
 }
-
+/* the following code sets the background color of the header to the designated variable and the
+text color to the designated variable. the header is also set to display: flex so that i can use
+flexbox in order to position the elements inside the header section accordingly. flex-direction:
+row sets the elements inside the container to display horizontally in a row. align-items:
+center aligns the items in the center of the container. justify-content: space-between sets
+the spacing around each item within the container */
 .header {
     background-color: var(--header-footer-color);
     color: var(--text-color);
@@ -19,7 +27,8 @@ html {
     align-items: center;
     justify-content: space-between;
 }
-
+/* this code sets the left margin of the header text in the header section to 20px. the text 
+color is also set to the designated variable */
 h1 {
     margin-left: 20px;
     color: var(--text-color);
@@ -39,11 +48,11 @@ h1 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
+/* this code removes the underline from all links in the html */
  a {
     text-decoration: none;
 }
-
+/* this code sets the items in the nav bar to change color when the mouse hovers over them */
 .nav li:hover {
     background-color: var(--header-2-color);
 }
