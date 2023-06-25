@@ -40,7 +40,7 @@ h1 {
     padding-bottom: 5px;
 }
 
-.nav li a {
+ a {
     text-decoration: none;
 }
 
@@ -57,6 +57,10 @@ main {
     color: var(--text-color);
 }
 
+h2 {
+    font-size: 50px;
+}
+
 .about-me p {
     margin-left: 10px;
     margin-right: 20px;
@@ -65,15 +69,36 @@ main {
     line-height: 23px;
 }
 
-.projects {
+.other-projects {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px;
+    padding: 5px;
 }
 
-#first-app {
+#first {
+    height: 300px;
+    width: 600px;
+    margin: 1px;
+}
+
+.other-projects h3, .first-project h3 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #cbc799; 
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    background-color: #f7d48b
+}
+
+.first-project {
     display: flex;
-    justify-self: center;
+    justify-content: center;
+    margin: 50px;
 }
 
 .contacts {
