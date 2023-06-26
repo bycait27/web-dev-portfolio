@@ -1,18 +1,8 @@
-/* the following code designates custom variables for various colors featured on 
-the website. these are the colors i will be using the most when styling with css. */
-:root {
-    --main-bg-color: #fff6eb;
-    --header-color: #f7d48b;
-    --button-color-1: #fff6eb;
-    --button-color-2: #8ea2e7;
-    --header-2-color: #cbc799;
-    --text-color: #1d1f21;
-}
 /* the following code sets the entire background color and text color of the code included 
 between the html tags to the designated variable */
 html {
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
+    background-color: #fff6eb;
+    color: #1d1f21;
 }
 
 body, html {
@@ -25,8 +15,8 @@ row sets the elements inside the container to display horizontally in a row. ali
 center aligns the items in the center of the container. justify-content: space-between sets
 the spacing around each item within the container. */
 .header {
-    background-color: var(--header-color);
-    color: var(--text-color);
+    background-color: #f7d48b;
+    color: #1d1f21;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,8 +25,8 @@ the spacing around each item within the container. */
 /* this code sets the left margin of the header text in the header section to 20px. the text 
 color is also set to the designated variable. */
 h1 {
-    color: var(--text-color);
-    background-color: var(--main-bg-color);
+    color: #1d1f21;
+    background-color: #fff6eb;
     margin-left: 0px;
     padding: 10px;
     padding-left: 60px;
@@ -49,7 +39,7 @@ h1 {
     list-style-type: none;
     margin-right: 25px;
     font-size: 25px;
-    border-bottom-color: var(--main-bg-color);
+    border-bottom-color: #fff6eb;
     border-bottom-style: solid;
     border-bottom-width: medium;
     padding: 5px;
@@ -62,7 +52,7 @@ h1 {
 }
 /* this code sets the items in the nav bar to change color when the mouse hovers over them */
 .nav a:hover {
-    background-color: var(--main-bg-color);
+    background-color: #fff6eb;
 }
 
 .hero-banner {
@@ -99,6 +89,7 @@ h1 {
 
 h2 {
     font-size: 50px;
+    color: #1d1f21
 }
 
 img {
@@ -149,6 +140,7 @@ img {
     background-image: url(/Users/caitlinash/Desktop/coding-challenges/web-dev-portfolio/assets/images/hero-banner.jpeg);
     background-position: center;
     background-size: cover;
+    font-size: larger;
 }
 
 .projects a:hover {
@@ -157,7 +149,7 @@ img {
 }
 
 .projects a {
-    background-color: var(--header-2-color);
+    background-color: #cbc799;
     padding-bottom: 10px;
     padding-top: 20px;
 }
@@ -182,6 +174,7 @@ left border and closer the the middle of the "contact me" section. */
     padding-left: 5px;
     padding-top: 70px;
     padding-right: 400px;
+    font-size: larger;
 }
 /* this adds a solid, medium border to the bottom of the contacts */
 .contacts li {
@@ -193,7 +186,7 @@ left border and closer the the middle of the "contact me" section. */
 /* this adds a hover action to the contacts when the mouse hovers over them. the background color changes, and the margin changes
 as well to make the contacts pop down further on the page. */
 .contacts li:hover {
-    background-color: var(--header-2-color);
+    background-color: #cbc799;
     margin-bottom: 70px;
     margin-top: 5px;
 }
