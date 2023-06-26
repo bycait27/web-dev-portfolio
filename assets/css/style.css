@@ -1,5 +1,5 @@
 /* the following code designates custom variables for various colors featured on 
-the website. these are the colors i will be using the most when styling with css */
+the website. these are the colors i will be using the most when styling with css. */
 :root {
     --main-bg-color: #fff6eb;
     --header-color: #f7d48b;
@@ -23,7 +23,7 @@ text color to the designated variable. the header is also set to display: flex s
 flexbox in order to position the elements inside the header section accordingly. flex-direction:
 row sets the elements inside the container to display horizontally in a row. align-items:
 center aligns the items in the center of the container. justify-content: space-between sets
-the spacing around each item within the container */
+the spacing around each item within the container. */
 .header {
     background-color: var(--header-color);
     color: var(--text-color);
@@ -33,7 +33,7 @@ the spacing around each item within the container */
     justify-content: space-between; 
 }
 /* this code sets the left margin of the header text in the header section to 20px. the text 
-color is also set to the designated variable */
+color is also set to the designated variable. */
 h1 {
     color: var(--text-color);
     background-color: var(--main-bg-color);
@@ -166,7 +166,9 @@ img {
     height: 200px;
     width: 600px;
 }
-
+/* this adds a solid, medium border to the left of the contact section. display: flex allows the contacts to be formatted
+in a row, evenly spaced, and in line with the subheading. the margins and padding set the contacts to look closer to the 
+left border and closer the the middle of the "contact me" section. */
 .contacts {
     list-style-type: none;
     display: flex;
@@ -178,4 +180,20 @@ img {
     border-left-width: medium;
     margin-left: 10px;
     padding-left: 5px;
+    padding-top: 70px;
+    padding-right: 400px;
+}
+/* this adds a solid, medium border to the bottom of the contacts */
+.contacts li {
+    border-bottom-color: #cbc799;
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    margin-bottom: 70px;
+}
+/* this adds a hover action to the contacts when the mouse hovers over them. the background color changes, and the margin changes
+as well to make the contacts pop down further on the page. */
+.contacts li:hover {
+    background-color: var(--header-2-color);
+    margin-bottom: 70px;
+    margin-top: 5px;
 }
