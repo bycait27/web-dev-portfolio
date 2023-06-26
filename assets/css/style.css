@@ -197,3 +197,56 @@ as well to make the contacts pop down further on the page. */
     margin-bottom: 70px;
     margin-top: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    header nav li {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-banner h2 {
+        display: inline-block;
+        text-align: center;
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-me, .work, .contact-me {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    h2 {
+        background-color: #cbc799;
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        display: flex;
+        max-height: 300px;
+        border-left: none;
+        width: min-content;
+    }
+    .paragraphs li {
+        display: inline-block;
+        text-align: center;
+    }
+    .projects {
+        display: block;
+        border-left: none;
+    }
+    #first {
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .contacts {
+        display: contents;
+        text-align: center;
+        width: max-content;
+        border-left: none;
+    }
+}
