@@ -15,12 +15,11 @@
             <h1>Caitlin Ash</h1>
             <!--this section marks the navigation bar of the website-->
             <nav class="nav">
-                <!--the following unordered list contains the links to various sections of the homepage-->
-                <ul class="page-links">
-                    <li><a href="#about-me">about me</a></li>
-                    <li><a href="#work">work</a></li>
-                    <li><a href="#contact-me">contact me</a></li>
-                </ul>
+                <!--the following <a> tags contain the links to various sections of the homepage. i tried to use an unordered
+                    list, however the links weren't working so i decided to try this instead-->
+                <a class="link" href="#about-me">about me</a>
+                <a class="link" href="#work">work</a>
+                <a class="link" href="#contact-me">contact me</a>
             </nav>
         </header>
         <!--this section includes the hero banner of the website-->
@@ -33,12 +32,14 @@
         <!--the main section includes the three main parts of the webpage: about me, work, and contact me-->
         <main>
             <!--the following section contains the "about me" section-->
-            <section class="about-me">
+            <!--the id "about-me" allows for the link in the nav bar to be linked to this section of the homepage-->
+            <section class="about-me" id="about-me">
                 <h2>About<br>Me</h2>
                 <p>My name is Caitlin Ash and I am a recent college graduate from Loyola University Chicago. I graduated with a Bachelor's of Science in Psycholoy, however I recently discovered a great interest in coding and web development. I started learning how to code in my free time while earning my degree and I decided that I wanted to try to pursue a career in web development after graduation. This led me to apply for a coding bootcamp at Washington University St. Louis, which I am currently in! When I am not coding, I enjoy taking walks outside, spending time with my family and friends, and creating digital art.</p>
             </section>
             <!--this section contains the "work" section-->
-            <section class="work">
+            <!--the id "work" allows for the link in the nav bar to be linked to this section of the homepage-->
+            <section class="work" id="work">
                 <h2>Work</h2>
                 <!--the following div contains my list of projects-->
                 <div class="projects">
@@ -49,9 +50,10 @@
                     <h3>N/A</h3>
                     <h3>N/A</h3>
                 </div>
-                <!--this section contains the "contact me" section-->
             </section>
-            <section class="contact-me">
+            <!--this section contains the "contact me" section-->
+            <!--the id "contact-me" allows for the link in the nav bar to be linked to this section of the homepage-->
+            <section class="contact-me" id="contact-me">
                 <h2>Contact<br>Me</h2>
                 <!--below is an unordered list of the various contacts-->
                 <ul class="contacts">

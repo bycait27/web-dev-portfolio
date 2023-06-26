@@ -30,36 +30,39 @@ the spacing around each item within the container */
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 /* this code sets the left margin of the header text in the header section to 20px. the text 
 color is also set to the designated variable */
 h1 {
-    margin-left: 20px;
     color: var(--text-color);
-}
-
-.header li {
     background-color: var(--main-bg-color);
+    margin-left: 0px;
+    padding: 10px;
+    padding-left: 60px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.page-links li {
+.nav .link {
     list-style-type: none;
-    display: inline-block;
     margin-right: 25px;
-    font-size: 18px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 25px;
+    border-bottom-color: var(--main-bg-color);
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    padding: 5px;
+    display: inline-flex;
 }
+
 /* this code removes the underline from all links in the html */
  a {
     text-decoration: none;
 }
 /* this code sets the items in the nav bar to change color when the mouse hovers over them */
-.nav li:hover {
-    background-color: var(--header-2-color);
+.nav a:hover {
+    background-color: var(--main-bg-color);
 }
 
 .hero-banner {
