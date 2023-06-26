@@ -85,7 +85,16 @@ h1 {
 .about-me, .work, .contact-me {
     display: flex;
     flex-direction: row;
+    margin-left: 150px;
 
+}
+
+.work {
+    margin-left: 70px;
+}
+
+.contact-me {
+    margin-left: 115px;
 }
 
 h2 {
@@ -105,16 +114,16 @@ p {
 
 .projects {
     list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-flow: wrap;
     padding: 20px;
+    border-left-style: solid;
+    border-left-color: #cbc799;
+    border-left-width: medium;
+    margin-left: 100px;
 }
 
-#first {
-    height: 300px;
-    width: 800px;
+.other-project {
+    display: flex;
+    flex-direction: column;
 }
 
 .projects h3 {
@@ -125,14 +134,27 @@ p {
     width: 300px;
     display: flex;
     flex-direction: column-reverse;
-    background-color: #f7d48b
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(/Users/caitlinash/Desktop/coding-challenges/web-dev-portfolio/assets/images/hero-banner.jpeg);
+    background-position: center;
+    background-size: cover;
 }
 
-.projects {
-    border-left-style: solid;
-    border-left-color: #cbc799;
-    border-left-width: medium;
-    margin-left: 100px;
+.projects a:hover {
+    background-color: #f7d48b;
+    opacity: 100%;
+}
+
+.projects a {
+    background-color: var(--header-2-color);
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#first {
+    height: 200px;
+    width: 600px;
 }
 
 .contacts {
