@@ -61,12 +61,14 @@ h1 {
 .hero-banner {
     background-image: url(/assets/images/hero-banner.jpeg);
 }
+.about-me, .work, .contact-me {
+    display: flex;
+    flex-direction: row;
+
+}
 
 h2 {
     font-size: 50px;
-    background-color: var(--header-2-color);
-    display: flex;
-    justify-content: flex-start;
 }
 
 p {
@@ -75,26 +77,26 @@ p {
     padding-left: 25px;
     padding-right: 150px;
     line-height: 23px;
+    border-left-style: solid;
+    border-left-color: #cbc799;
+    border-left-width: medium;
 }
 
-.other-projects {
+.projects {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 100px;
-    padding: 5px;
+    flex-direction: column;
+    flex-flow: wrap;
+    padding: 20px;
 }
 
 #first {
     height: 300px;
-    width: 600px;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 800px;
 }
 
-.other-projects h3, .first-project h3 {
+.projects h3 {
     border-width: 5px;
     border-style: solid;
     border-color: #cbc799; 
@@ -105,9 +107,22 @@ p {
     background-color: #f7d48b
 }
 
+.projects {
+    border-left-style: solid;
+    border-left-color: #cbc799;
+    border-left-width: medium;
+    margin-left: 100px;
+}
+
 .contacts {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex: auto;
+    border-left-style: solid;
+    border-left-color: #cbc799;
+    border-left-width: medium;
+    margin-left: 10px;
+    padding-left: 5px;
 }
