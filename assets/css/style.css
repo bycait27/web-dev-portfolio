@@ -2,16 +2,17 @@
 the website. these are the colors i will be using the most when styling with css */
 :root {
     --main-bg-color: #fff6eb;
-    --header-footer-color: #f7d48b;
+    --header-color: #f7d48b;
     --button-color-1: #fff6eb;
     --button-color-2: #8ea2e7;
     --header-2-color: #cbc799;
     --text-color: #1d1f21;
 }
-/* the following code sets the entire background color of the code included between the html 
-tags to the designated variable */
+/* the following code sets the entire background color and text color of the code included 
+between the html tags to the designated variable */
 html {
     background-color: var(--main-bg-color);
+    color: var(--text-color);
 }
 /* the following code sets the background color of the header to the designated variable and the
 text color to the designated variable. the header is also set to display: flex so that i can use
@@ -20,7 +21,7 @@ row sets the elements inside the container to display horizontally in a row. ali
 center aligns the items in the center of the container. justify-content: space-between sets
 the spacing around each item within the container */
 .header {
-    background-color: var(--header-footer-color);
+    background-color: var(--header-color);
     color: var(--text-color);
     display: flex;
     flex-direction: row;
@@ -61,16 +62,14 @@ h1 {
     background-image: url(/assets/images/hero-banner.jpeg);
 }
 
-main {
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
-}
-
 h2 {
     font-size: 50px;
+    background-color: var(--header-2-color);
+    display: flex;
+    justify-content: flex-start;
 }
 
-.about-me p {
+p {
     margin-left: 10px;
     margin-right: 20px;
     padding-left: 25px;
@@ -91,7 +90,8 @@ h2 {
 #first {
     height: 300px;
     width: 600px;
-    margin: 1px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .other-projects h3, .first-project h3 {
@@ -100,14 +100,9 @@ h2 {
     border-color: #cbc799; 
     height: 100px;
     width: 300px;
-    text-align: center;
-    background-color: #f7d48b
-}
-
-.first-project {
     display: flex;
-    justify-content: center;
-    margin: 50px;
+    flex-direction: column-reverse;
+    background-color: #f7d48b
 }
 
 .contacts {
@@ -116,12 +111,3 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
 }
-
-h2 {
-    background-color: var(--header-2-color);
-    display: flex;
-    align-items: center;
-    height: 50px;
-    justify-content: center;
-}
-
