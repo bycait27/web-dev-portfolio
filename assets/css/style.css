@@ -1,3 +1,7 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* the following code sets the entire background color and text color of the code included 
 between the html tags to the designated variable */
 html {
@@ -120,6 +124,7 @@ img {
     border-left-color: #cbc799;
     border-left-width: medium;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 .other-project {
