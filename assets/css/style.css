@@ -1,9 +1,11 @@
+/* this sets the font for the whole website to Courier New and the preceding fonts if that 
+doesn't work */
 * {
     font-family: 'Courier New', Courier, monospace;
 }
 
 /* the following code sets the entire background color and text color of the code included 
-between the html tags to the designated variable */
+between the html tags to the designated color */
 html {
     background-color: #fff6eb;
     color: #1d1f21;
@@ -13,7 +15,7 @@ body, html {
     height: 100%;
 }
 /* the following code sets the background color of the header to the designated variable and the
-text color to the designated variable. the header is also set to display: flex so that i can use
+text color to the designated color. the header is also set to display: flex so that i can use
 flexbox in order to position the elements inside the header section accordingly. flex-direction:
 row sets the elements inside the container to display horizontally in a row. align-items:
 center aligns the items in the center of the container. justify-content: space-between sets
@@ -26,19 +28,21 @@ the spacing around each item within the container. */
     align-items: center;
     justify-content: space-between; 
 }
-/* this code sets the left margin of the header text in the header section to 20px. the text 
-color is also set to the designated variable. */
+/* this code sets the left margin of the header text in the header section to 0 so that it displays 
+against the left of the header. the margin top and bottom are set to give more space outside the 
+header 1 text. the padding-left gives more space between the text on the header and the left margin.
+the text color and background color is also set to the designated color. */
 h1 {
     color: #1d1f21;
     background-color: #fff6eb;
     margin-left: 0px;
-    padding: 10px;
     padding-left: 60px;
     font-size: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
+/* this sets the formatting of the links in the nav bar. there is no bullet point, they are displayed 
+in a line, and they have a solid, medium bottom border of the designated color. */
 .nav .link {
     list-style-type: none;
     margin-right: 25px;
@@ -58,9 +62,13 @@ h1 {
 .nav a:hover {
     background-color: #fff6eb;
 }
-
+/* this sets the background image of the hero banner to cover the entire section as well as center 
+the image. it is set to display: flex so that the contents can be moved to the end of the container 
+vertically and horizontally. the opacity is set to make the text on the hero banner easier to read.
+the height is also set to 200px. */
 .hero-banner {
-    background-image: url(/Users/caitlinash/Desktop/coding-challenges/web-dev-portfolio/assets/images/hero-banner.jpeg);
+    /* the relative path to the image wasn't working, so i had to use the regular path */
+    background-image: url("/Users/caitlinash/Desktop/coding-challenges/web-dev-portfolio/assets/images/hero-banner.jpeg");
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -70,32 +78,36 @@ h1 {
     justify-content: end;
 
 }
-
+/* this allows the text on the hero banner to adhere to display: flex. the margin-right also 
+slightly offsets the text from the very right of the webpage. */
 .quote {
     display: flex;
     margin-right: 50px;
 }
-
+/* this allows these sections' contents to appear as a row. the left margin offsets the 
+subheadings from the left of the webpage. */
 .about-me, .work, .contact-me {
     display: flex;
     flex-direction: row;
     margin-left: 150px;
 
 }
-
+/* the following two selectors had to be tinkered with to make the margins of all three 
+sections match up. */
 .work {
-    margin-left: 70px;
+    margin-left: 90px;
 }
-
+/* ^^^ */
 .contact-me {
-    margin-left: 115px;
+    margin-left: 90px;
 }
-
+/* this set the font size of all section 2 headers as well as the color. */
 h2 {
     font-size: 50px;
     color: #1d1f21
 }
-
+/* this set the left side of the image to have a solid, medium border next to to the 
+section headings. */
 img {
     border-left-style: solid;
     border-left-color: #cbc799;
@@ -106,7 +118,9 @@ img {
     margin-bottom: 30px;
     padding-top: 25px;
 }
-
+/* this was set to display: flex so that the two separate parts of the paragraph could
+be listed as a column and spaced evenly. the line height was also set to match the example 
+website. */
 .paragraphs {
     margin-right: 20px;
     padding-left: 10px;
@@ -116,7 +130,8 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
 }
-
+/* this got rid of the list style for the projects, added a solid, medium border to the left of the
+projects, and set the left and right margins for the projects. the padding between was also set. */
 .projects {
     list-style-type: none;
     padding: 20px;
@@ -126,12 +141,15 @@ img {
     margin-left: 100px;
     margin-right: 100px;
 }
-
+/* this selector made the second project display as flex in a column under the first project. */
 .other-project {
     display: flex;
     flex-direction: column;
 }
-
+/* this set the border of the project, and allowed the text to be displayed in flex to sit at
+the start of the container and in the center of the container. the height and width of the 
+projects were set, as well as the background image of the projects. the background image was
+centered over the container and set to cover it. the font size was set to larger. */
 .projects h3 {
     border-width: 5px;
     border-style: solid;
@@ -142,23 +160,23 @@ img {
     flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: center;
-    background-image: url(/Users/caitlinash/Desktop/coding-challenges/web-dev-portfolio/assets/images/hero-banner.jpeg);
+    /* the relative path to the image wasn't working, so i had to use the regular path */
+    background-image: url("/Users/caitlinash/Desktop/coding-challenges/web-dev-portfolio/assets/images/hero-banner.jpeg");
     background-position: center;
     background-size: cover;
     font-size: larger;
 }
-
+/* this created a hover action over the project links so that it changes color when the mouse hovers over them. */
 .projects a:hover {
     background-color: #f7d48b;
-    opacity: 100%;
 }
-
+/* this set the background color of the link and the thickness of the background. */
 .projects a {
     background-color: #cbc799;
     padding-bottom: 10px;
     padding-top: 20px;
 }
-
+/* this allows the first project to appear bigger than the other one. */
 #first {
     height: 200px;
     width: 600px;
@@ -195,56 +213,70 @@ as well to make the contacts pop down further on the page. */
     margin-bottom: 70px;
     margin-top: 5px;
 }
-
+/* this sets the following styles to any screen 600px or smaller */
 @media screen and (max-width: 600px) {
+    /* the header will move to be the center of the container */
     header {
         display: flex;
         justify-content: center;
     }
+    /* the nav links will move into a column */
     header nav li {
         display: flex;
         flex-direction: column;
     }
+    /* the text in the hero banner will stay inline and be centered. the font
+    size will also change. */
     .hero-banner h2 {
         display: inline-block;
         text-align: center;
         font-size: xx-large;
     }
 }
-
+/* this sets the following styles to any screen 900px or smaller */
 @media screen and (max-width: 900px) {
+    /* this turns the three main sections into a column instead of a 
+    row with no left margin */
     .about-me, .work, .contact-me {
         display: flex;
         flex-direction: column;
         margin-left: 0;
     }
+    /* this changes the background of the main section headers and makes
+    it take up the width of the website. the text is also centered. */
     h2 {
         background-color: #cbc799;
         width: 100%;
         text-align: center;
     }
+    /* the image has a max-height of 300px, no left border and displays flex.
+    the width is only as wide as the min-content. */
     img {
         display: flex;
         max-height: 300px;
         border-left: none;
         width: min-content;
     }
+    /* the text in the "about me" section is set to inline-block and is centered */
     .paragraphs li {
         display: inline-block;
         text-align: center;
     }
+    /* the projects will display as block and have no left border */
     .projects {
         display: block;
         border-left: none;
     }
+    /* the first project will become a little smaller in width */
     #first {
         max-width: 300px;
         max-height: 200px;
     }
+    /* the contacts will display as the width of the container, align in the center,
+    and have no left border */
     .contacts {
         display: contents;
         text-align: center;
-        width: max-content;
         border-left: none;
     }
 }
