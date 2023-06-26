@@ -101,15 +101,25 @@ h2 {
     font-size: 50px;
 }
 
-p {
-    margin-left: 10px;
-    margin-right: 20px;
-    padding-left: 25px;
-    padding-right: 150px;
-    line-height: 23px;
+img {
     border-left-style: solid;
     border-left-color: #cbc799;
     border-left-width: medium;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+
+.paragraphs {
+    margin-right: 20px;
+    padding-left: 10px;
+    line-height: 23px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .projects {
