@@ -14,9 +14,9 @@ When the user first sees the webpage, they can use the navigation bar to click o
 
 In the "about-me" section, the user can see a paragraph about me and a picture of me on the left of the text. The "work" section contains the two projects I have completed so far in bootcamp. The user can click the title of the project and it will take them to that link in the same browser. Below is my "contact-me" section, which includes my phone number, email, GitHub profile, and LinkedIn profile. When the user clicks on GitHub or LinkedIn, they will be taken to those designated pages in the same browser.
 
-![tutorial](assets/images/Screen Recording 2023-06-26 at 10.13.09 PM.mov)
-![screenshot](assets/images/Screen Shot 2023-06-26 at 10.12.10 PM.png)
-![screenshot](assets/images/Screen Shot 2023-06-26 at 10.12.20 PM.png)
+![tutorial](./assets/images/Screen%20Recording%202023-06-26%20at%2010.13.09%20PM.mov)
+![screenshot](./assets/images/Screen%20Shot%202023-06-26%20at%2010.12.10%20PM.png)
+![screenshot](./assets/images/Screen%20Shot%202023-06-26%20at%2010.12.20%20PM.png)
 
 [website](https://bycait27.github.io/web-dev-portfolio/) 
 
