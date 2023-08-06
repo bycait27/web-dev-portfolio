@@ -5,16 +5,17 @@
   <head>
     <!--this title is what is displayed on the tab in the browser-->
     <title>Portfolio: Caitlin Ash</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body>
+    <body class="bg-orange-50">
         <!--this section marks the header of the website-->
-        <header class="header">
+        <header class="bg-indigo-400 h-24 flex flex-row items-center justify-between" id="header">
             <!--my name will be displayed in the header-->
-            <h1>Caitlin Ash</h1>
+            <h1 class="flex justify-end bg-orange-50 w-80 p-1 text-4xl text-end font-semibold font-mono">Caitlin Ash</h1>
             <!--this section marks the navigation bar of the website-->
-            <nav class="nav">
+            <nav class="text-xl font-semibold font-mono" id="nav">
                 <!--the following <a> tags contain the links to various sections of the homepage. i tried to use an unordered
                     list, however the links weren't working so i decided to try this instead-->
                 <a class="link" href="#about-me">about me</a>
@@ -23,10 +24,10 @@
             </nav>
         </header>
         <!--this section includes the hero banner of the website-->
-        <section class="hero-banner">
-            <div class="quote">
+        <section class="bg-[url(assets/images/hero-banner.jpeg)] bg-cover h-48" id="hero-banner">
+            <div id="quote">
                 <!--this header displays text on the hero banner-->
-                <h2>hello world</h2>
+                <h2 class="font-semibold text-3xl font-mono flex justify-end pt-20 pr-10">hello world</h2>
             </div>
         </section>
         <!--the main section includes the three main parts of the webpage: about me, work, and contact me-->
